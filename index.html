@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arkhon Mimarlık</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Questrial:wght@100;200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+    <style>
+        section{
+            scroll-margin-top: 80px;
+        }
+
+        :root {
+            --bs-font-sans-serif: 'Questrial';
+        }
+
+        .bg-primary {
+            background-color: #48a6bd !important;
+        }
+
+        .text-primary {
+            color: #48a6bd !important;
+        }
+
+        .nav-item {
+            padding: 5px;
+        }
+
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+
+        .bg-dark {
+            background-color: #121212 !important;
+        }
+
+        .bg-dark-subtle {
+            background-color: #171717 !important;
+        }
+        a.card {
+            transition: all 0.1s ease-in;
+            text-decoration: none;
+        }
+        a.card:hover>img {
+            opacity: 0.4 !important;
+        }
+
+        a.card>p {
+            transition: all 0.1s ease-in;
+            opacity: 0 !important;
+        }
+        
+        a.card:hover>p {
+            opacity: 1 !important;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .navbar, .nav-link, .offcanvas, a.card>img, .logo-img{
+            transition: all 0.1s ease-in;
+        }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+</head>
+<body class="bg-dark">
+    <section id="navbar-section">
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top bg-transparent" aria-label="Offcanvas navbar large">
+            <div class="container py-1">
+                <a class="navbar-brand mx-auto" href="#" style="position: relative;">
+                    <img id="logo_light" class="logo-img" src="logo_light.png" height="50px" style="opacity: 1;" />
+                    <img id="logo_dark" class="logo-img" src="logo_light.png" height="50px" style="position: absolute; left: 0; opacity: 0; filter: invert(1);" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvasNavbar2">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasNavbar2Label">
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav flex-grow-1 justify-content-center pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#home">Anasayfa</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#services">Hizmetlerimiz</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#works">Çalışmalarımız</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">Hakkımızda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">İletişim</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <main data-bs-spy="scroll" data-bs-target="#navbar-section">
+        <div id="home" id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner bg-black">
+                <div class="carousel-item active">
+                    <img class="bd-placeholder-img" width="100%" height="100%" src="https://www.kelebekmutfak.com/images/thumbs/0000325_liana.jpeg" style="object-fit:cover; opacity:0.3" />
+                    <div class="container">
+                        <div class="carousel-caption text-center" style="height:55%" data-aos="fade-up">
+                            <h2 class="display-4 fw-bold">Mutfak ve Banyo</h2>
+                            <p>Mutfak ve banyonuza mutluluk getirecek yepyeni <span class="fw-bold text-danger">Kelebek</span> ile tanışın </p>
+                            <p>
+                                <a class="btn btn-lg btn-outline-light" href="#">İncele</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="bd-placeholder-img" width="100%" height="100%" src="https://images.pexels.com/photos/313736/pexels-photo-313736.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" style="object-fit:cover; opacity:0.3" />
+                    <div class="container">
+                        <div class="carousel-caption text-center" style="height:55%">
+                            <h1 class="display-4 fw-bold">Mimari projeler</h1>
+                            <p>2010'dan bu yana uygulanmış <span class="fw-bold text-primary">yüzlerce proje</span> ile güvendiğiniz marka </p>
+                            <p>
+                                <a class="btn btn-lg btn-outline-light" href="#">İncele</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#home" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#home" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    
+        <section id="services">
+            <div class="container text-center bg-dark py-5">
+                <div class="row m-0 p-0">
+                    <div class="col-lg-4 p-3">
+                        <div class="p-5 h-100 bg-dark-subtle shadow-sm" data-aos="fade-up" data-aos-delay="0">
+                            <i class="bi bi-menu-button-wide-fill text-secondary" style="font-size: 2rem;"></i>
+                            <h5 class="fw-bold text-light mt-4">Mutfak</h5>
+                            <p class="text-secondary m-0">Kaliteli ve huzurlu bir mutfak uzak değil. İhtiyaçlarınızı biliyor, fark yaratan tasarımlar üretiyoruz.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 p-3">
+                        <div class="p-5 h-100 bg-dark-subtle shadow-sm" data-aos="fade-up" data-aos-delay="50">
+                            <i class="bi bi-bank2 text-secondary" style="font-size: 2rem;"></i>
+                            <h5 class="fw-bold text-light mt-4">Mimarlık</h5>
+                            <p class="text-secondary m-0">2010'dan bu yana uygulanmış yüzlerce proje ile güvendiğiniz marka.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 p-3">
+                        <div class="p-5 h-100 bg-dark-subtle shadow-sm" data-aos="fade-up" data-aos-delay="100">
+                            <i class="bi bi-buildings-fill text-secondary" style="font-size: 2rem;"></i>
+                            <h5 class="fw-bold text-light mt-4">Proje Çözümleri</h5>
+                            <p class="text-secondary m-0">Mimarlık, Mühendislik, İmar Barışı, BIM (Bina Bilgi Modelleme) gibi tüm ihtiyaçlarınızın çözümleri aynı çatı altında.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="works" class="bg-white pt-5">
+            <div class="container-fluid" style="overflow: hidden;">
+                <p class="text-center fw-bold text-primary mb-0">Neler yaptık?</p>
+                <h2 class="text-center display-6 text-body mt-0 mb-5">Çalışmalarımız</h2>
+                <div class="row">
+                    <div class="col-12 col-lg-6 m-0 p-0" data-aos="fade-up" data-aos-delay="0">
+                        <a class="card border border-0 rounded-0 bg-black h-100 text-white border-none" style="min-height:600px;">
+                            <img class="h-100 w-100" src="https://images.pexels.com/photos/3016430/pexels-photo-3016430.jpeg?auto=compress&cs=tinysrgb&w=800" style="position: absolute; object-fit: cover; object-position: center; opacity: 1;" />
+                            <p class="lead my-auto mx-auto" style="z-index: 10;">Kepez Mutfak</p>
+                        </a>
+                    </div>
+                    <div class="col-12 col-lg-6 m-0 p-0" data-aos="fade-up" data-aos-delay="20">
+                        <div class="row row-cols-1 row-cols-md-2 align-items-stretch">
+                            <div class="col m-0 p-0">
+                                <a class="card border border-0 rounded-0 bg-black h-100 text-white border-none" style="min-height:300px;">
+                                    <img class="h-100 w-100" src="https://images.pexels.com/photos/6284235/pexels-photo-6284235.jpeg?auto=compress&cs=tinysrgb&w=800" style="position: absolute; object-fit: cover; object-position: center; opacity: 1;" />
+                                    <p class="lead my-auto mx-auto" style="z-index: 10;">Kepez Mutfak</p>
+                                </a>
+                            </div>
+                            <div class="col m-0 p-0" data-aos="fade-up" data-aos-delay="40">
+                                <a class="card border border-0 rounded-0 bg-black h-100 text-white border-none" style="min-height:300px;">
+                                    <img class="h-100 w-100" src="https://images.pexels.com/photos/7534280/pexels-photo-7534280.jpeg?auto=compress&cs=tinysrgb&w=800" style="position: absolute; object-fit: cover; object-position: center; opacity: 1;" />
+                                    <p class="lead my-auto mx-auto" style="z-index: 10;">Kepez Mutfak</p>
+                                </a>
+                            </div>
+                            <div class="col m-0 p-0" data-aos="fade-up" data-aos-delay="60">
+                                <a class="card border border-0 rounded-0 bg-black h-100 text-white border-none" style="min-height:300px;">
+                                    <img class="h-100 w-100" src="https://images.pexels.com/photos/7511695/pexels-photo-7511695.jpeg?auto=compress&cs=tinysrgb&w=800" style="position: absolute; object-fit: cover; object-position: center; opacity: 1;" />
+                                    <p class="lead my-auto mx-auto" style="z-index: 10;">Kepez Mutfak</p>
+                                </a>
+                            </div>
+                            <div class="col m-0 p-0" data-aos="fade-up" data-aos-delay="80">
+                                <a class="card border border-0 rounded-0 bg-black h-100 text-white border-none" style="min-height:300px;">
+                                    <img class="h-100 w-100" src="https://images.pexels.com/photos/3016430/pexels-photo-3016430.jpeg?auto=compress&cs=tinysrgb&w=800" style="position: absolute; object-fit: cover; object-position: center; opacity: 1;" />
+                                    <p class="lead my-auto mx-auto" style="z-index: 10;">Kepez Mutfak</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="bg-light">
+            <div class="container">
+                <div class="row py-5">
+                    <div class="col-md-7 p-5" data-aos="fade-up">
+                        <p class="fw-bold text-primary">Biz kimiz?</p>
+                        <h2 class="display-6 mt-0 mb-3 text-body">Hakkımızda</h2>
+                        <p class="lead text-secondary">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+                    </div>
+                    <div class="col-md-5 p-0" style="overflow: hidden;" data-aos="fade-up" data-aos-delay="50">
+                        <img src="https://images.pexels.com/photos/7642088/pexels-photo-7642088.jpeg?auto=compress&cs=tinysrgb&w=800" height="400" width="500" style="object-fit:cover" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="bg-white">
+            <div class="container-xl px-4 pb-5" data-aos="fade-up">
+                <p class="text-center fw-bold text-primary mb-0 pt-5">Bize ulaşın</p>
+                <h2 class="text-center fw-bold display-6 text-body mt-0 mb-2">İletişim</h2>
+                <div class="row py-3 justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="feature-icon rounded d-inline-flex align-items-center justify-content-center mb-2 me-2" style="height: 60px; width:60px;">
+                            <i class="fs-3 text-primary p-3 bi-envelope"></i>
+                        </div>
+                        <div class="feature-icon rounded d-inline-flex align-items-center justify-content-center mb-2 me-2" style="height: 60px; width:60px;">
+                            <i class="fs-3 text-primary p-3 bi-whatsapp"></i>
+                        </div>
+                        <div class="feature-icon rounded d-inline-flex align-items-center justify-content-center mb-2 me-2" style="height: 60px; width:60px;">
+                            <i class="fs-3 text-primary p-3 bi-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="row text-center py-2">
+                    <div class="col-12 col-md-4 d-flex flex-column">
+                        <h4 class="fw-semibold mb-0">Telefon</h4>
+                        <p class="lead text-body-secondary">0555 333 22 11</p>
+                    </div>
+                    <div class="col-12 col-md-4 d-flex flex-column">
+                        <h4 class="fw-semibold mb-0">Çalışma saatleri</h4>
+                        <p class="lead text-body-secondary">09:00 - 21:00</p>
+                    </div>
+                    <div class="col-12 col-md-4 d-flex flex-column">
+                        <h4 class="fw-semibold mb-0">Adres</h4>
+                        <p class="lead text-body-secondary">Güllerpınarı Mah. Keykubat Blv. Demet Sultan Blok D No:206/C, Alanya/Antalya</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container-fluid px-0">
+            <div class="row m-0" data-aos="fade-up">
+                <iframe class="p-0" width="100%" style="height:100%; min-height:250px; border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDSeiMwv8CY5pU2xdBT6-EcFdvtTTf8w7I&q=place_id:ChIJ9el61c6psRQRPWC5XNnS1Xk"></iframe>
+            </div>
+        </div>
+    </main>
+    <footer class="footer mt-auto py-3 bg-dark-subtle">
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-0 my-4">
+                <div class="col-md-4 d-flex align-items-center">
+                    <span class="mb-3 mb-md-0 text-white-50">© 2023 Arkhon Mimarlık</span>
+                </div>
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                    <li class="ms-3">
+                        <a class="text-white-50" href="#">
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="ms-3">
+                        <a class="text-white-50" href="#">
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="ms-3">
+                        <a class="text-white-50" href="#">
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </footer>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script>
+        let scrolled = false;
+        var navbar = document.getElementById("navbar");
+        var logo_light = document.getElementById("logo_light");
+        var logo_dark = document.getElementById("logo_dark");
+        var offcanvas = document.getElementById("offcanvas")
+        document.addEventListener("scroll", (event) => {
+            if (window.scrollY >= 130 & navbar.classList.contains("bg-transparent")) {
+                console.log(window.scrollY)
+                navbar.classList.toggle("bg-transparent");
+                navbar.classList.toggle("bg-white");
+                navbar.classList.toggle("navbar-dark");
+                navbar.classList.toggle("navbar-light");
+                navbar.classList.toggle("shadow-sm");
+                offcanvas.classList.toggle("text-bg-dark");
+                logo_light.style.opacity = 0;
+                logo_dark.style.opacity = 1;
+            } else if (window.scrollY < 130 & navbar.classList.contains("bg-white")) {
+                console.log(window.scrollY)
+                navbar.classList.toggle("bg-transparent");
+                navbar.classList.toggle("bg-white");
+                navbar.classList.toggle("navbar-dark");
+                navbar.classList.toggle("navbar-light");
+                navbar.classList.toggle("shadow-sm");
+                offcanvas.classList.toggle("text-bg-dark");
+                logo_light.style.opacity = 1;
+                logo_dark.style.opacity = 0;
+            }
+        })
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true
+        });
+    </script>
+</body>
+</html>
